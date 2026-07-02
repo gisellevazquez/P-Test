@@ -1,0 +1,1804 @@
+{
+  "element": {
+    "type": "container",
+    "sourceTag": "div",
+    "children": [
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Handpan"
+                ],
+                "properties": {
+                  "class": "eyebrow"
+                },
+                "dataUid": "uid-4"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Panflow D Kurd"
+                ],
+                "properties": {
+                  "class": "product-name"
+                },
+                "dataUid": "uid-5"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Touch every note before you buy"
+                ],
+                "properties": {
+                  "class": "tagline"
+                },
+                "dataUid": "uid-6"
+              }
+            ],
+            "properties": {
+              "class": "name-block"
+            },
+            "dataUid": "uid-3"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "X"
+            ],
+            "properties": {
+              "class": "close-circle",
+              "id": "close-btn-product"
+            },
+            "dataUid": "uid-7"
+          }
+        ],
+        "properties": {
+          "class": "panel-header"
+        },
+        "dataUid": "uid-2"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "USD"
+                ],
+                "properties": {
+                  "class": "currency-label"
+                },
+                "dataUid": "uid-10"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "1,890"
+                ],
+                "properties": {
+                  "class": "price"
+                },
+                "dataUid": "uid-11"
+              }
+            ],
+            "properties": {
+              "class": "price-group"
+            },
+            "dataUid": "uid-9"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [],
+                "properties": {
+                  "class": "stock-dot"
+                },
+                "dataUid": "uid-13"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "In stock"
+                ],
+                "properties": {
+                  "class": "stock-text"
+                },
+                "dataUid": "uid-14"
+              }
+            ],
+            "properties": {
+              "class": "stock-badge"
+            },
+            "dataUid": "uid-12"
+          }
+        ],
+        "properties": {
+          "class": "price-row"
+        },
+        "dataUid": "uid-8"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Scale"
+                    ],
+                    "properties": {
+                      "class": "spec-label"
+                    },
+                    "dataUid": "uid-18"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "D Kurd"
+                    ],
+                    "properties": {
+                      "class": "spec-val"
+                    },
+                    "dataUid": "uid-19"
+                  }
+                ],
+                "properties": {
+                  "class": "spec-cell"
+                },
+                "dataUid": "uid-17"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Notes"
+                    ],
+                    "properties": {
+                      "class": "spec-label"
+                    },
+                    "dataUid": "uid-21"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "9-note"
+                    ],
+                    "properties": {
+                      "class": "spec-val"
+                    },
+                    "dataUid": "uid-22"
+                  }
+                ],
+                "properties": {
+                  "class": "spec-cell"
+                },
+                "dataUid": "uid-20"
+              }
+            ],
+            "properties": {
+              "class": "spec-row"
+            },
+            "dataUid": "uid-16"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Material"
+                    ],
+                    "properties": {
+                      "class": "spec-label"
+                    },
+                    "dataUid": "uid-25"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Nitrided steel"
+                    ],
+                    "properties": {
+                      "class": "spec-val"
+                    },
+                    "dataUid": "uid-26"
+                  }
+                ],
+                "properties": {
+                  "class": "spec-cell"
+                },
+                "dataUid": "uid-24"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Finish"
+                    ],
+                    "properties": {
+                      "class": "spec-label"
+                    },
+                    "dataUid": "uid-28"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Matte silver"
+                    ],
+                    "properties": {
+                      "class": "spec-val"
+                    },
+                    "dataUid": "uid-29"
+                  }
+                ],
+                "properties": {
+                  "class": "spec-cell"
+                },
+                "dataUid": "uid-27"
+              }
+            ],
+            "properties": {
+              "class": "spec-row"
+            },
+            "dataUid": "uid-23"
+          }
+        ],
+        "properties": {
+          "class": "spec-grid"
+        },
+        "dataUid": "uid-15"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [],
+        "properties": {
+          "class": "divider"
+        },
+        "dataUid": "uid-30"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "sourceTag": "span",
+            "type": "custom",
+            "children": [
+              "Coming soon"
+            ],
+            "properties": {
+              "class": "coming-label"
+            },
+            "dataUid": "uid-32"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [],
+            "properties": {
+              "class": "coming-rule"
+            },
+            "dataUid": "uid-33"
+          },
+          {
+            "sourceTag": "span",
+            "type": "custom",
+            "children": [
+              "Possible, just not yet"
+            ],
+            "properties": {
+              "class": "coming-sub"
+            },
+            "dataUid": "uid-34"
+          }
+        ],
+        "properties": {
+          "class": "coming-hdr"
+        },
+        "dataUid": "uid-31"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Color"
+                    ],
+                    "properties": {
+                      "class": "soon-name"
+                    },
+                    "dataUid": "uid-38"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Soon"
+                    ],
+                    "properties": {
+                      "class": "soon-tag"
+                    },
+                    "dataUid": "uid-39"
+                  }
+                ],
+                "properties": {
+                  "class": "soon-card-hdr"
+                },
+                "dataUid": "uid-37"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [],
+                    "properties": {
+                      "class": "swatch swatch-lav"
+                    },
+                    "dataUid": "uid-41"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [],
+                    "properties": {
+                      "class": "swatch swatch-grn"
+                    },
+                    "dataUid": "uid-42"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [],
+                    "properties": {
+                      "class": "swatch swatch-ros"
+                    },
+                    "dataUid": "uid-43"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [],
+                    "properties": {
+                      "class": "swatch swatch-wht"
+                    },
+                    "dataUid": "uid-44"
+                  }
+                ],
+                "properties": {
+                  "class": "soon-visual"
+                },
+                "dataUid": "uid-40"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Pick a finish tone"
+                ],
+                "properties": {
+                  "class": "soon-sub"
+                },
+                "dataUid": "uid-45"
+              }
+            ],
+            "properties": {
+              "class": "soon-card"
+            },
+            "dataUid": "uid-36"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Scale"
+                    ],
+                    "properties": {
+                      "class": "soon-name"
+                    },
+                    "dataUid": "uid-48"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Soon"
+                    ],
+                    "properties": {
+                      "class": "soon-tag"
+                    },
+                    "dataUid": "uid-49"
+                  }
+                ],
+                "properties": {
+                  "class": "soon-card-hdr"
+                },
+                "dataUid": "uid-47"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "D  Em  G  A"
+                    ],
+                    "properties": {
+                      "class": "wave-text"
+                    },
+                    "dataUid": "uid-51"
+                  }
+                ],
+                "properties": {
+                  "class": "soon-visual"
+                },
+                "dataUid": "uid-50"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Try other tunings"
+                ],
+                "properties": {
+                  "class": "soon-sub"
+                },
+                "dataUid": "uid-52"
+              }
+            ],
+            "properties": {
+              "class": "soon-card"
+            },
+            "dataUid": "uid-46"
+          }
+        ],
+        "properties": {
+          "class": "soon-grid"
+        },
+        "dataUid": "uid-35"
+      },
+      {
+        "sourceTag": "button",
+        "type": "custom",
+        "children": [
+          "Configure Experience"
+        ],
+        "properties": {
+          "class": "cta-btn",
+          "id": "btn-configure"
+        },
+        "dataUid": "uid-53"
+      }
+    ],
+    "properties": {
+      "class": "card"
+    },
+    "dataUid": "uid-1"
+  },
+  "classes": {
+    "card": {
+      "content": {
+        "width": "54",
+        "padding": "3",
+        "backgroundColor": "#16121f",
+        "borderColor": "#2d2a35",
+        "borderWidth": "0.12",
+        "borderRadius": 3.5,
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "2.4"
+      }
+    },
+    "panel-header": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "flex-start"
+      }
+    },
+    "name-block": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.6",
+        "flexGrow": "1"
+      }
+    },
+    "close-circle": {
+      "content": {
+        "width": "7",
+        "height": "7",
+        "borderRadius": 3.5,
+        "backgroundColor": "#221e2b",
+        "borderColor": "#2d2a35",
+        "borderWidth": "0.12",
+        "color": "#858585",
+        "fontSize": "2.6",
+        "textAlign": "center",
+        "cursor": "pointer",
+        "flexShrink": "0",
+        "hover": {
+          "backgroundColor": "#2a2633",
+          "color": "#f5f5f5"
+        }
+      }
+    },
+    "eyebrow": {
+      "content": {
+        "fontSize": "1.8",
+        "letterSpacing": "0.12em",
+        "textTransform": "uppercase",
+        "color": "#9e87ce",
+        "fontWeight": "600"
+      }
+    },
+    "product-name": {
+      "content": {
+        "fontSize": "5.5",
+        "fontWeight": "700",
+        "color": "#f5f5f5",
+        "lineHeight": "1",
+        "margin": "0"
+      }
+    },
+    "tagline": {
+      "content": {
+        "fontSize": "2.2",
+        "color": "#858585",
+        "margin": "0"
+      }
+    },
+    "price-row": {
+      "content": {
+        "backgroundColor": "#221e2b",
+        "borderColor": "#2d2a35",
+        "borderWidth": "0.12",
+        "borderRadius": 2.2,
+        "padding": "1.8",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between"
+      }
+    },
+    "price-group": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "baseline",
+        "gap": "0.8"
+      }
+    },
+    "currency-label": {
+      "content": {
+        "fontSize": "2",
+        "color": "#858585",
+        "fontWeight": "400"
+      }
+    },
+    "price": {
+      "content": {
+        "fontSize": "6",
+        "fontWeight": "700",
+        "color": "#f5f5f5",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "stock-badge": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "1",
+        "backgroundColor": "#122620",
+        "borderColor": "#3a7a60",
+        "borderWidth": "0.1",
+        "borderRadius": 2,
+        "padding": "0.8"
+      }
+    },
+    "stock-dot": {
+      "content": {
+        "width": "1.5",
+        "height": "1.5",
+        "borderRadius": 0.75,
+        "backgroundColor": "#6eb89a",
+        "flexShrink": "0"
+      }
+    },
+    "stock-text": {
+      "content": {
+        "fontSize": "1.9",
+        "fontWeight": "600",
+        "color": "#6eb89a",
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spec-grid": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.8"
+      }
+    },
+    "spec-row": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": "0.8"
+      }
+    },
+    "spec-cell": {
+      "content": {
+        "flexGrow": "1",
+        "backgroundColor": "#221e2b",
+        "borderColor": "#2d2a35",
+        "borderWidth": "0.1",
+        "borderRadius": 2,
+        "padding": "1.5",
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.4"
+      }
+    },
+    "spec-label": {
+      "content": {
+        "fontSize": "1.7",
+        "color": "#474747",
+        "fontWeight": "600",
+        "letterSpacing": "0.08em",
+        "textTransform": "uppercase"
+      }
+    },
+    "spec-val": {
+      "content": {
+        "fontSize": "2.3",
+        "color": "#f5f5f5",
+        "fontWeight": "600"
+      }
+    },
+    "divider": {
+      "content": {
+        "height": "0.1",
+        "backgroundColor": "#2d2a35"
+      }
+    },
+    "coming-hdr": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "1.5"
+      }
+    },
+    "coming-label": {
+      "content": {
+        "fontSize": "1.8",
+        "fontWeight": "600",
+        "letterSpacing": "0.10em",
+        "textTransform": "uppercase",
+        "color": "#474747"
+      }
+    },
+    "coming-rule": {
+      "content": {
+        "flexGrow": "1",
+        "height": "0.1",
+        "backgroundColor": "#2d2a35"
+      }
+    },
+    "coming-sub": {
+      "content": {
+        "fontSize": "1.8",
+        "color": "#474747"
+      }
+    },
+    "soon-grid": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": "1"
+      }
+    },
+    "soon-card": {
+      "content": {
+        "flexGrow": "1",
+        "backgroundColor": "#221e2b",
+        "borderColor": "#2d2a35",
+        "borderWidth": "0.1",
+        "borderRadius": 2.2,
+        "padding": "1.8",
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1.2"
+      }
+    },
+    "soon-card-hdr": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between"
+      }
+    },
+    "soon-name": {
+      "content": {
+        "fontSize": "2.6",
+        "fontWeight": "600",
+        "color": "#f5f5f5"
+      }
+    },
+    "soon-tag": {
+      "content": {
+        "fontSize": "1.6",
+        "fontWeight": "700",
+        "letterSpacing": "0.08em",
+        "textTransform": "uppercase",
+        "color": "#9e87ce",
+        "backgroundColor": "#261e3a",
+        "borderColor": "#3d2e5a",
+        "borderWidth": "0.1",
+        "borderRadius": 1,
+        "padding": "0.4"
+      }
+    },
+    "soon-visual": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "0.8",
+        "height": "3"
+      }
+    },
+    "swatch": {
+      "content": {
+        "width": "2.2",
+        "height": "2.2",
+        "borderRadius": 1.1,
+        "borderWidth": "0.1",
+        "borderColor": "#474747",
+        "flexShrink": "0"
+      }
+    },
+    "swatch-lav": {
+      "content": {
+        "backgroundColor": "#9e87ce"
+      }
+    },
+    "swatch-grn": {
+      "content": {
+        "backgroundColor": "#6eb89a"
+      }
+    },
+    "swatch-ros": {
+      "content": {
+        "backgroundColor": "#e89ab4"
+      }
+    },
+    "swatch-wht": {
+      "content": {
+        "backgroundColor": "#858585"
+      }
+    },
+    "wave-text": {
+      "content": {
+        "fontSize": "2",
+        "color": "#6eb89a",
+        "letterSpacing": "0.04em"
+      }
+    },
+    "soon-sub": {
+      "content": {
+        "fontSize": "1.9",
+        "color": "#858585"
+      }
+    },
+    "cta-btn": {
+      "content": {
+        "padding": "2.4",
+        "borderRadius": 2.2,
+        "borderWidth": "0.12",
+        "borderColor": "#9e87ce",
+        "fontSize": "2.8",
+        "fontWeight": "700",
+        "cursor": "pointer",
+        "textAlign": "center",
+        "backgroundColor": "#9e87ce",
+        "color": "#16121f",
+        "letterSpacing": "-0.01em",
+        "hover": {
+          "backgroundColor": "#b29de0",
+          "borderColor": "#b29de0"
+        }
+      }
+    }
+  },
+  "ranges": {
+    "card": {
+      "start": {
+        "line": 2,
+        "column": 2
+      },
+      "end": {
+        "line": 2,
+        "column": 7
+      }
+    },
+    "panel-header": {
+      "start": {
+        "line": 15,
+        "column": 2
+      },
+      "end": {
+        "line": 15,
+        "column": 15
+      }
+    },
+    "name-block": {
+      "start": {
+        "line": 22,
+        "column": 2
+      },
+      "end": {
+        "line": 22,
+        "column": 13
+      }
+    },
+    "close-circle": {
+      "start": {
+        "line": 29,
+        "column": 2
+      },
+      "end": {
+        "line": 29,
+        "column": 15
+      }
+    },
+    "eyebrow": {
+      "start": {
+        "line": 48,
+        "column": 2
+      },
+      "end": {
+        "line": 48,
+        "column": 10
+      }
+    },
+    "product-name": {
+      "start": {
+        "line": 56,
+        "column": 2
+      },
+      "end": {
+        "line": 56,
+        "column": 15
+      }
+    },
+    "tagline": {
+      "start": {
+        "line": 64,
+        "column": 2
+      },
+      "end": {
+        "line": 64,
+        "column": 10
+      }
+    },
+    "price-row": {
+      "start": {
+        "line": 71,
+        "column": 2
+      },
+      "end": {
+        "line": 71,
+        "column": 12
+      }
+    },
+    "price-group": {
+      "start": {
+        "line": 83,
+        "column": 2
+      },
+      "end": {
+        "line": 83,
+        "column": 14
+      }
+    },
+    "currency-label": {
+      "start": {
+        "line": 90,
+        "column": 2
+      },
+      "end": {
+        "line": 90,
+        "column": 17
+      }
+    },
+    "price": {
+      "start": {
+        "line": 96,
+        "column": 2
+      },
+      "end": {
+        "line": 96,
+        "column": 8
+      }
+    },
+    "stock-badge": {
+      "start": {
+        "line": 103,
+        "column": 2
+      },
+      "end": {
+        "line": 103,
+        "column": 14
+      }
+    },
+    "stock-dot": {
+      "start": {
+        "line": 115,
+        "column": 2
+      },
+      "end": {
+        "line": 115,
+        "column": 12
+      }
+    },
+    "stock-text": {
+      "start": {
+        "line": 123,
+        "column": 2
+      },
+      "end": {
+        "line": 123,
+        "column": 13
+      }
+    },
+    "spec-grid": {
+      "start": {
+        "line": 131,
+        "column": 2
+      },
+      "end": {
+        "line": 131,
+        "column": 12
+      }
+    },
+    "spec-row": {
+      "start": {
+        "line": 137,
+        "column": 2
+      },
+      "end": {
+        "line": 137,
+        "column": 11
+      }
+    },
+    "spec-cell": {
+      "start": {
+        "line": 143,
+        "column": 2
+      },
+      "end": {
+        "line": 143,
+        "column": 12
+      }
+    },
+    "spec-label": {
+      "start": {
+        "line": 155,
+        "column": 2
+      },
+      "end": {
+        "line": 155,
+        "column": 13
+      }
+    },
+    "spec-val": {
+      "start": {
+        "line": 163,
+        "column": 2
+      },
+      "end": {
+        "line": 163,
+        "column": 11
+      }
+    },
+    "divider": {
+      "start": {
+        "line": 170,
+        "column": 2
+      },
+      "end": {
+        "line": 170,
+        "column": 10
+      }
+    },
+    "coming-hdr": {
+      "start": {
+        "line": 176,
+        "column": 2
+      },
+      "end": {
+        "line": 176,
+        "column": 13
+      }
+    },
+    "coming-label": {
+      "start": {
+        "line": 183,
+        "column": 2
+      },
+      "end": {
+        "line": 183,
+        "column": 15
+      }
+    },
+    "coming-rule": {
+      "start": {
+        "line": 191,
+        "column": 2
+      },
+      "end": {
+        "line": 191,
+        "column": 14
+      }
+    },
+    "coming-sub": {
+      "start": {
+        "line": 197,
+        "column": 2
+      },
+      "end": {
+        "line": 197,
+        "column": 13
+      }
+    },
+    "soon-grid": {
+      "start": {
+        "line": 202,
+        "column": 2
+      },
+      "end": {
+        "line": 202,
+        "column": 12
+      }
+    },
+    "soon-card": {
+      "start": {
+        "line": 208,
+        "column": 2
+      },
+      "end": {
+        "line": 208,
+        "column": 12
+      }
+    },
+    "soon-card-hdr": {
+      "start": {
+        "line": 220,
+        "column": 2
+      },
+      "end": {
+        "line": 220,
+        "column": 16
+      }
+    },
+    "soon-name": {
+      "start": {
+        "line": 227,
+        "column": 2
+      },
+      "end": {
+        "line": 227,
+        "column": 12
+      }
+    },
+    "soon-tag": {
+      "start": {
+        "line": 233,
+        "column": 2
+      },
+      "end": {
+        "line": 233,
+        "column": 11
+      }
+    },
+    "soon-visual": {
+      "start": {
+        "line": 246,
+        "column": 2
+      },
+      "end": {
+        "line": 246,
+        "column": 14
+      }
+    },
+    "swatch": {
+      "start": {
+        "line": 254,
+        "column": 2
+      },
+      "end": {
+        "line": 254,
+        "column": 9
+      }
+    },
+    "swatch-lav": {
+      "start": {
+        "line": 263,
+        "column": 2
+      },
+      "end": {
+        "line": 263,
+        "column": 13
+      }
+    },
+    "swatch-grn": {
+      "start": {
+        "line": 264,
+        "column": 2
+      },
+      "end": {
+        "line": 264,
+        "column": 13
+      }
+    },
+    "swatch-ros": {
+      "start": {
+        "line": 265,
+        "column": 2
+      },
+      "end": {
+        "line": 265,
+        "column": 13
+      }
+    },
+    "swatch-wht": {
+      "start": {
+        "line": 266,
+        "column": 2
+      },
+      "end": {
+        "line": 266,
+        "column": 13
+      }
+    },
+    "wave-text": {
+      "start": {
+        "line": 268,
+        "column": 2
+      },
+      "end": {
+        "line": 268,
+        "column": 12
+      }
+    },
+    "soon-sub": {
+      "start": {
+        "line": 274,
+        "column": 2
+      },
+      "end": {
+        "line": 274,
+        "column": 11
+      }
+    },
+    "cta-btn": {
+      "start": {
+        "line": 280,
+        "column": 2
+      },
+      "end": {
+        "line": 280,
+        "column": 10
+      }
+    },
+    "uid-1": {
+      "start": {
+        "line": 300,
+        "column": 0
+      },
+      "end": {
+        "line": 389,
+        "column": 6
+      }
+    },
+    "uid-2": {
+      "start": {
+        "line": 303,
+        "column": 2
+      },
+      "end": {
+        "line": 310,
+        "column": 8
+      }
+    },
+    "uid-3": {
+      "start": {
+        "line": 304,
+        "column": 4
+      },
+      "end": {
+        "line": 308,
+        "column": 10
+      }
+    },
+    "uid-4": {
+      "start": {
+        "line": 305,
+        "column": 6
+      },
+      "end": {
+        "line": 305,
+        "column": 42
+      }
+    },
+    "uid-5": {
+      "start": {
+        "line": 306,
+        "column": 6
+      },
+      "end": {
+        "line": 306,
+        "column": 54
+      }
+    },
+    "uid-6": {
+      "start": {
+        "line": 307,
+        "column": 6
+      },
+      "end": {
+        "line": 307,
+        "column": 66
+      }
+    },
+    "uid-7": {
+      "start": {
+        "line": 309,
+        "column": 4
+      },
+      "end": {
+        "line": 309,
+        "column": 66
+      }
+    },
+    "uid-8": {
+      "start": {
+        "line": 313,
+        "column": 2
+      },
+      "end": {
+        "line": 322,
+        "column": 8
+      }
+    },
+    "uid-9": {
+      "start": {
+        "line": 314,
+        "column": 4
+      },
+      "end": {
+        "line": 317,
+        "column": 10
+      }
+    },
+    "uid-10": {
+      "start": {
+        "line": 315,
+        "column": 6
+      },
+      "end": {
+        "line": 315,
+        "column": 45
+      }
+    },
+    "uid-11": {
+      "start": {
+        "line": 316,
+        "column": 6
+      },
+      "end": {
+        "line": 316,
+        "column": 38
+      }
+    },
+    "uid-12": {
+      "start": {
+        "line": 318,
+        "column": 4
+      },
+      "end": {
+        "line": 321,
+        "column": 10
+      }
+    },
+    "uid-13": {
+      "start": {
+        "line": 319,
+        "column": 6
+      },
+      "end": {
+        "line": 319,
+        "column": 35
+      }
+    },
+    "uid-14": {
+      "start": {
+        "line": 320,
+        "column": 6
+      },
+      "end": {
+        "line": 320,
+        "column": 46
+      }
+    },
+    "uid-15": {
+      "start": {
+        "line": 325,
+        "column": 2
+      },
+      "end": {
+        "line": 346,
+        "column": 8
+      }
+    },
+    "uid-16": {
+      "start": {
+        "line": 326,
+        "column": 4
+      },
+      "end": {
+        "line": 335,
+        "column": 10
+      }
+    },
+    "uid-17": {
+      "start": {
+        "line": 327,
+        "column": 6
+      },
+      "end": {
+        "line": 330,
+        "column": 12
+      }
+    },
+    "uid-18": {
+      "start": {
+        "line": 328,
+        "column": 8
+      },
+      "end": {
+        "line": 328,
+        "column": 45
+      }
+    },
+    "uid-19": {
+      "start": {
+        "line": 329,
+        "column": 8
+      },
+      "end": {
+        "line": 329,
+        "column": 44
+      }
+    },
+    "uid-20": {
+      "start": {
+        "line": 331,
+        "column": 6
+      },
+      "end": {
+        "line": 334,
+        "column": 12
+      }
+    },
+    "uid-21": {
+      "start": {
+        "line": 332,
+        "column": 8
+      },
+      "end": {
+        "line": 332,
+        "column": 45
+      }
+    },
+    "uid-22": {
+      "start": {
+        "line": 333,
+        "column": 8
+      },
+      "end": {
+        "line": 333,
+        "column": 44
+      }
+    },
+    "uid-23": {
+      "start": {
+        "line": 336,
+        "column": 4
+      },
+      "end": {
+        "line": 345,
+        "column": 10
+      }
+    },
+    "uid-24": {
+      "start": {
+        "line": 337,
+        "column": 6
+      },
+      "end": {
+        "line": 340,
+        "column": 12
+      }
+    },
+    "uid-25": {
+      "start": {
+        "line": 338,
+        "column": 8
+      },
+      "end": {
+        "line": 338,
+        "column": 48
+      }
+    },
+    "uid-26": {
+      "start": {
+        "line": 339,
+        "column": 8
+      },
+      "end": {
+        "line": 339,
+        "column": 52
+      }
+    },
+    "uid-27": {
+      "start": {
+        "line": 341,
+        "column": 6
+      },
+      "end": {
+        "line": 344,
+        "column": 12
+      }
+    },
+    "uid-28": {
+      "start": {
+        "line": 342,
+        "column": 8
+      },
+      "end": {
+        "line": 342,
+        "column": 46
+      }
+    },
+    "uid-29": {
+      "start": {
+        "line": 343,
+        "column": 8
+      },
+      "end": {
+        "line": 343,
+        "column": 50
+      }
+    },
+    "uid-30": {
+      "start": {
+        "line": 348,
+        "column": 2
+      },
+      "end": {
+        "line": 348,
+        "column": 29
+      }
+    },
+    "uid-31": {
+      "start": {
+        "line": 351,
+        "column": 2
+      },
+      "end": {
+        "line": 355,
+        "column": 8
+      }
+    },
+    "uid-32": {
+      "start": {
+        "line": 352,
+        "column": 4
+      },
+      "end": {
+        "line": 352,
+        "column": 49
+      }
+    },
+    "uid-33": {
+      "start": {
+        "line": 353,
+        "column": 4
+      },
+      "end": {
+        "line": 353,
+        "column": 35
+      }
+    },
+    "uid-34": {
+      "start": {
+        "line": 354,
+        "column": 4
+      },
+      "end": {
+        "line": 354,
+        "column": 58
+      }
+    },
+    "uid-35": {
+      "start": {
+        "line": 357,
+        "column": 2
+      },
+      "end": {
+        "line": 384,
+        "column": 8
+      }
+    },
+    "uid-36": {
+      "start": {
+        "line": 359,
+        "column": 4
+      },
+      "end": {
+        "line": 371,
+        "column": 10
+      }
+    },
+    "uid-37": {
+      "start": {
+        "line": 360,
+        "column": 6
+      },
+      "end": {
+        "line": 363,
+        "column": 12
+      }
+    },
+    "uid-38": {
+      "start": {
+        "line": 361,
+        "column": 8
+      },
+      "end": {
+        "line": 361,
+        "column": 44
+      }
+    },
+    "uid-39": {
+      "start": {
+        "line": 362,
+        "column": 8
+      },
+      "end": {
+        "line": 362,
+        "column": 42
+      }
+    },
+    "uid-40": {
+      "start": {
+        "line": 364,
+        "column": 6
+      },
+      "end": {
+        "line": 369,
+        "column": 12
+      }
+    },
+    "uid-41": {
+      "start": {
+        "line": 365,
+        "column": 8
+      },
+      "end": {
+        "line": 365,
+        "column": 45
+      }
+    },
+    "uid-42": {
+      "start": {
+        "line": 366,
+        "column": 8
+      },
+      "end": {
+        "line": 366,
+        "column": 45
+      }
+    },
+    "uid-43": {
+      "start": {
+        "line": 367,
+        "column": 8
+      },
+      "end": {
+        "line": 367,
+        "column": 45
+      }
+    },
+    "uid-44": {
+      "start": {
+        "line": 368,
+        "column": 8
+      },
+      "end": {
+        "line": 368,
+        "column": 45
+      }
+    },
+    "uid-45": {
+      "start": {
+        "line": 370,
+        "column": 6
+      },
+      "end": {
+        "line": 370,
+        "column": 54
+      }
+    },
+    "uid-46": {
+      "start": {
+        "line": 374,
+        "column": 4
+      },
+      "end": {
+        "line": 383,
+        "column": 10
+      }
+    },
+    "uid-47": {
+      "start": {
+        "line": 375,
+        "column": 6
+      },
+      "end": {
+        "line": 378,
+        "column": 12
+      }
+    },
+    "uid-48": {
+      "start": {
+        "line": 376,
+        "column": 8
+      },
+      "end": {
+        "line": 376,
+        "column": 44
+      }
+    },
+    "uid-49": {
+      "start": {
+        "line": 377,
+        "column": 8
+      },
+      "end": {
+        "line": 377,
+        "column": 42
+      }
+    },
+    "uid-50": {
+      "start": {
+        "line": 379,
+        "column": 6
+      },
+      "end": {
+        "line": 381,
+        "column": 12
+      }
+    },
+    "uid-51": {
+      "start": {
+        "line": 380,
+        "column": 8
+      },
+      "end": {
+        "line": 380,
+        "column": 50
+      }
+    },
+    "uid-52": {
+      "start": {
+        "line": 382,
+        "column": 6
+      },
+      "end": {
+        "line": 382,
+        "column": 53
+      }
+    },
+    "uid-53": {
+      "start": {
+        "line": 387,
+        "column": 2
+      },
+      "end": {
+        "line": 387,
+        "column": 74
+      }
+    }
+  }
+}
