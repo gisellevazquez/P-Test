@@ -66,6 +66,15 @@
     }
     .material-select:focus { border-color: #4a7a5c; }
 
+    /* Shop URL */
+    #shop-url-input {
+      width: 100%; background: #111; border: 1px solid #2a2a2a;
+      border-radius: 6px; color: #ccc; font-size: 12px; padding: 7px 8px;
+      outline: none;
+    }
+    #shop-url-input:focus { border-color: #4a7a5c; }
+    #shop-url-input::placeholder { color: #444; }
+
     /* Zone count */
     .zone-count-row { display: flex; align-items: center; gap: 6px; }
     .zone-count-btn {
@@ -249,6 +258,11 @@
       <div id="coords">
         <span>x</span> — &nbsp; <span>y</span> — &nbsp; <span>z</span> —
       </div>
+      <div class="tilt-row" id="radius-control">
+        <span class="tilt-label">Area (m)</span>
+        <input type="range" class="tilt-slider" id="radius-slider" min="0.05" max="0.35" value="0.15" step="0.01">
+        <span class="tilt-val" id="radius-value">0.15</span>
+      </div>
       <div class="tilt-row" id="tilt-control">
         <span class="tilt-label">X (°)</span>
         <input type="range" class="tilt-slider" id="tilt-slider-x" min="-45" max="45" value="0" step="1">
@@ -286,6 +300,13 @@
       <div id="zone-sound-list"></div>
     </div>
 
+    <!-- Store shop URL -->
+    <div class="sb-section">
+      <h2>Store shop URL</h2>
+      <input type="url" id="shop-url-input" placeholder="https://your-store.com/handpan" spellcheck="false">
+      <p class="sb-hint">Shop Now button in XR opens this link for buyers.</p>
+    </div>
+
     <!-- Export -->
     <div class="sb-section" style="flex:1;display:flex;flex-direction:column;">
       <h2>Export</h2>
@@ -315,6 +336,7 @@ function getZoneName(i) { return i === 0 ? 'Ding' : String(i); }
 function getZoneColorHex(i) { return ZONE_COLORS_HEX[i % ZONE_COLORS_HEX.length]; }
 function getZoneColorThree(i) { return parseInt(getZoneColorHex(i).slice(1), 16); }
 function getDefaultRadius(i) { return i === 0 ? 0.18 : 0.15; }
+const BASE_DISC_RADIUS = 0.10; // CircleGeometry radius — visual scales to match metres
 
 // Musical notes for the note selector (C3 → B5)
 const NOTE_NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
@@ -330,6 +352,8 @@ let zoneNotes = [];
 let zoneTiltX = [];    // degrees (-45..+45) — tilt around local X
 let zoneTiltY = [];    // degrees (-45..+45) — tilt around local Y
 let zoneTiltZ = [];    // degrees (-45..+45) — tilt around local Z
+let zoneRadii = [];    // trigger radius in metres
+let shopUrl = '';
 let loadedSoundFiles = [];
 let selectedZone = 0;
 let handpanGroup = null;
@@ -492,6 +516,7 @@ function rebuildZoneArrays(newCount) {
   const oldTiltX = zoneTiltX;
   const oldTiltY = zoneTiltY;
   const oldTiltZ = zoneTiltZ;
+  const oldRadii = zoneRadii;
 
   zones = Array.from({ length: newCount }, (_, i) => {
     if (i < oldZones.length) return { position: oldZones[i].position, placed: oldZones[i].placed };
@@ -502,6 +527,9 @@ function rebuildZoneArrays(newCount) {
   zoneTiltX  = Array.from({ length: newCount }, (_, i) => (i < oldTiltX.length ? oldTiltX[i] : 0));
   zoneTiltY  = Array.from({ length: newCount }, (_, i) => (i < oldTiltY.length ? oldTiltY[i] : 0));
   zoneTiltZ  = Array.from({ length: newCount }, (_, i) => (i < oldTiltZ.length ? oldTiltZ[i] : 0));
+  zoneRadii  = Array.from({ length: newCount }, (_, i) => (
+    i < oldRadii.length ? oldRadii[i] : getDefaultRadius(i)
+  ));
 
   while (zoneMeshes.length > newCount) {
     const mesh = zoneMeshes.pop();
@@ -536,6 +564,7 @@ function rebuildZoneArrays(newCount) {
       disk.position.copy(zones[i].position);
       disk.position.y += 0.003;
       applyZoneTilt(i);
+      applyZoneRadius(i);
       disk.visible = true;
       btn.classList.add('placed');
     } else {
@@ -560,6 +589,9 @@ function setZoneCount(newCount, { force = false } = {}) {
   const parsed = Math.max(1, Math.floor(Number(newCount)) || 1);
   if (parsed === zoneCount) {
     document.getElementById('zone-count-input').value = String(zoneCount);
+    if (!force) return;
+    if (zoneMeshes.length === zoneCount) return;
+    rebuildZoneArrays(zoneCount);
     return;
   }
 
@@ -590,6 +622,11 @@ function setZoneCount(newCount, { force = false } = {}) {
 document.getElementById('material-select').addEventListener('change', (e) => {
   selectedMaterial = e.target.value;
   if (!MATERIALS.includes(selectedMaterial)) selectedMaterial = 'nitrided_steel';
+  updateExport();
+});
+
+document.getElementById('shop-url-input').addEventListener('input', (e) => {
+  shopUrl = e.target.value;
   updateExport();
 });
 
@@ -767,6 +804,7 @@ function placeZone(i, point) {
   disk.visible = true;
   disk.userData.ring.visible = (i === selectedZone);
   applyZoneTilt(i);
+  applyZoneRadius(i);
   btnEls[i].classList.add('placed');
   updateInfoPanel();
   updateExport();
@@ -797,6 +835,7 @@ const fmt = v => (v >= 0 ? ' ' : '') + v.toFixed(3);
 
 function updateInfoPanel() {
   const z = zones[selectedZone];
+  if (!z) return;
   document.getElementById('zone-name').textContent =
     `Zone ${selectedZone} — ${getZoneName(selectedZone)}${z.placed ? ' ✓' : ''}`;
   const c = document.getElementById('coords');
@@ -806,6 +845,13 @@ function updateInfoPanel() {
   } else {
     c.innerHTML = `<span>x</span> — &nbsp; <span>y</span> — &nbsp; <span>z</span> —`;
   }
+
+  const radius = zoneRadii[selectedZone] ?? getDefaultRadius(selectedZone);
+  const radiusSlider = document.getElementById('radius-slider');
+  radiusSlider.min = selectedZone === 0 ? '0.08' : '0.05';
+  radiusSlider.max = selectedZone === 0 ? '0.40' : '0.35';
+  radiusSlider.value = String(radius);
+  document.getElementById('radius-value').textContent = radius.toFixed(2);
 
   // Tilt control — Ding (zone 0) uses sphere, no tilt
   const isDing = selectedZone === 0;
@@ -835,7 +881,7 @@ function buildZoneOffsets() {
 }
 
 function buildZoneRadii() {
-  return zones.map((_, i) => getDefaultRadius(i));
+  return zones.map((_, i) => zoneRadii[i] ?? getDefaultRadius(i));
 }
 
 function buildZoneTilts() {
@@ -855,7 +901,7 @@ function updateExport() {
   });
 
   const radiiLines = zones.map((_, i) => {
-    const r = getDefaultRadius(i);
+    const r = zoneRadii[i] ?? getDefaultRadius(i);
     const tag = i === 0 ? ' // 0 Ding — wider' : ` // ${i}`;
     return `  ${r.toFixed(2)},${tag}`;
   });
@@ -891,6 +937,7 @@ function updateExport() {
     zone_tilts: buildZoneTilts(),
     zone_notes: zoneNotes,
     model_scale: 1.0,
+    shop_url: shopUrl.trim() || null,
   };
 
   const tsBlock =
@@ -927,6 +974,14 @@ function setStatus(msg) { document.getElementById('status').textContent = msg; }
 // ── Button handlers ───────────────────────────────────────────────────────────
 document.getElementById('btn-clear-zone').onclick = () => clearZone(selectedZone);
 document.getElementById('btn-clear-all').onclick  = () => clearAll();
+
+document.getElementById('radius-slider').addEventListener('input', () => {
+  const radius = parseFloat(document.getElementById('radius-slider').value);
+  zoneRadii[selectedZone] = radius;
+  document.getElementById('radius-value').textContent = radius.toFixed(2);
+  applyZoneRadius(selectedZone);
+  updateExport();
+});
 
 // Tilt sliders
 document.getElementById('tilt-slider-x').addEventListener('input', () => {
@@ -965,6 +1020,14 @@ function applyZoneTilt(i) {
   disk.rotation.y = yRad;
   disk.rotation.z = zRad;
   // ring inherits from disk (it's a child), so it tilts with the disk
+}
+
+function applyZoneRadius(i) {
+  const disk = zoneMeshes[i];
+  if (!disk) return;
+  const radius = zoneRadii[i] ?? getDefaultRadius(i);
+  const scale = radius / BASE_DISC_RADIUS;
+  disk.scale.set(scale, scale, scale);
 }
 
 document.getElementById('copy-btn').onclick = () => {
@@ -1016,8 +1079,11 @@ function animate() {
 animate();
 
 // ── Init ──────────────────────────────────────────────────────────────────────
-setZoneCount(DEFAULT_ZONE_COUNT, { force: true });
+const DEFAULT_MODEL_URL = new URL("/gltf/handpan/hand_pan.glb", window.location.origin).href;
+
+rebuildZoneArrays(zoneCount);
 updateExport();
+loadModelFromURL(DEFAULT_MODEL_URL, "hand_pan.glb");
 </script>
 </body>
 </html>

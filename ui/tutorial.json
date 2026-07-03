@@ -34,12 +34,25 @@
             "sourceTag": "button",
             "type": "custom",
             "children": [
-              "Skip"
+              "Skip step"
             ],
             "properties": {
-              "id": "tutorial-skip"
+              "class": "skip-btn",
+              "id": "tutorial-skip-step"
             },
             "dataUid": "uid-5"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "Skip tutorial"
+            ],
+            "properties": {
+              "class": "skip-btn",
+              "id": "tutorial-skip"
+            },
+            "dataUid": "uid-6"
           }
         ],
         "properties": {
@@ -92,7 +105,7 @@
         "gap": "1.2"
       }
     },
-    "__id__tutorial-skip": {
+    "skip-btn": {
       "content": {
         "padding": "1.4 2.8",
         "borderRadius": 2,
@@ -107,6 +120,16 @@
         "hover": {
           "backgroundColor": "#2a2633",
           "color": "#f5f5f5"
+        }
+      }
+    },
+    "__id__tutorial-skip-step": {
+      "content": {
+        "borderColor": "#3d3252",
+        "color": "#9e87ce",
+        "hover": {
+          "backgroundColor": "#2a2238",
+          "color": "#c4b0e8"
         }
       }
     }
@@ -152,64 +175,84 @@
         "column": 6
       }
     },
-    "__id__tutorial-skip": {
+    "skip-btn": {
       "start": {
         "line": 35,
         "column": 2
       },
       "end": {
         "line": 35,
-        "column": 16
+        "column": 11
+      }
+    },
+    "__id__tutorial-skip-step": {
+      "start": {
+        "line": 53,
+        "column": 2
+      },
+      "end": {
+        "line": 53,
+        "column": 21
       }
     },
     "uid-1": {
       "start": {
-        "line": 54,
+        "line": 64,
         "column": 0
       },
       "end": {
-        "line": 60,
+        "line": 71,
         "column": 6
       }
     },
     "uid-2": {
       "start": {
-        "line": 55,
+        "line": 65,
         "column": 2
       },
       "end": {
-        "line": 55,
+        "line": 65,
         "column": 37
       }
     },
     "uid-3": {
       "start": {
-        "line": 56,
+        "line": 66,
         "column": 2
       },
       "end": {
-        "line": 56,
+        "line": 66,
         "column": 72
       }
     },
     "uid-4": {
       "start": {
-        "line": 57,
+        "line": 67,
         "column": 2
       },
       "end": {
-        "line": 59,
+        "line": 70,
         "column": 8
       }
     },
     "uid-5": {
       "start": {
-        "line": 58,
+        "line": 68,
         "column": 4
       },
       "end": {
-        "line": 58,
-        "column": 44
+        "line": 68,
+        "column": 71
+      }
+    },
+    "uid-6": {
+      "start": {
+        "line": 69,
+        "column": 4
+      },
+      "end": {
+        "line": 69,
+        "column": 70
       }
     }
   }

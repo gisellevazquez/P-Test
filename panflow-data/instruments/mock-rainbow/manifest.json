@@ -1,0 +1,33 @@
+{
+  "id": "mock-rainbow",
+  "name": "Rainbow Handpan",
+  "model_url": "model.glb",
+  "audio_urls": [
+    "/audio/handpan/0.mp3",
+    "/audio/handpan/1.mp3",
+    "/audio/handpan/2.mp3",
+    "/audio/handpan/3.mp3",
+    "/audio/handpan/4.mp3",
+    "/audio/handpan/5.mp3",
+    "/audio/handpan/6.mp3",
+    "/audio/handpan/7.mp3",
+    "/audio/handpan/8.mp3"
+  ],
+  "zone_count": 9,
+  "zone_notes": [
+    "C3",
+    "F3",
+    "B3",
+    "E4",
+    "A4",
+    "D5",
+    "A5",
+    "D5",
+    "G5"
+  ],
+  "material": "rainbow",
+  "scale_name": "9-note",
+  "price_usd": 2290,
+  "shop_url": "https://example.com/handpan",
+  "in_stock": false
+}
